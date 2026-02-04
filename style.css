@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -60,19 +61,22 @@ svg {
 }
 
 body {
+  background-color: var(--purple-100);
   min-height: 100vh;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
   /* Quick Center Strategy */
   display: grid;
   place-content: center;
 }
 
 .accordion {
+  background-color: var(--white);
   max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   padding: 1.5rem;
+  border-radius: 0.5rem;
 }
 
 .divider {
@@ -110,4 +114,14 @@ h2 {
 
 .faq p {
   color: var(--purple-600);
+}
+
+/* .faq-1-content,
+.faq-2-content,
+.faq-3-content,
+.faq-4-content {
+  display: none;
+} */
+.hidden {
+  display: none;
 }
